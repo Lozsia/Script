@@ -1,12 +1,5 @@
-local Github = "https://raw.githubusercontent.com/Lozsia/Yum-Hub/main/Maps/"
-local Id = {
-    [1962086868] = "Tower-of-Hell.lua",
-    [3582763398] = "Tower-of-Hell.lua",
-    [5253186791] = "Tower-of-Hell.lua",
-    [662417684] = "LUCKY-BLOCKS-Battlegrounds.lua",
-}
-for i, v in pairs(Id) do
-    if i == game.PlaceId or i == game.GameId then
-        loadstring(game:HttpGet(Github .. v))()
-    end
+if game.PlaceId == 1962086868 or game.PlaceId == 3582763398 or game.PlaceId == 5253186791
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lozsia/Yum-Hub/main/Maps/Tower-of-Hell.lua"))();
+elseif game.PlaceId == 662417684 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Lozsia/Yum-Hub/main/Maps/LUCKY-BLOCKS-Battlegrounds.lua"))();
 end
